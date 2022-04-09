@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "rootDir":"src",
+      "target": "es2017",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "lib": ["esnext"],
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true
+    }
+  }

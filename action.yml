@@ -1,0 +1,12 @@
+name: Github issus to Hexo action
+description: Generate hexo article from github issue
+inputs:
+  issue_url:
+    description: The blog issue link. Like https://github.com/flytam/blog/issues
+    required: true
+  output:
+    description: The directory of the hexo source. Default `process.cwd()`
+    required: false
+runs:
+  using: node16
+  main: dist/index.js

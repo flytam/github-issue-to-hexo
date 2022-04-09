@@ -1,0 +1,33 @@
+{
+  "name": "github-issue-to-hexo",
+  "version": "1.0.0",
+  "description": "A github action which can generate hexo article from github issue",
+  "keywords": ["github", "issue", "hexo", "blog"],
+  "license": "MIT",
+  "author": "flytam",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint ./src/*.ts",
+    "lint:fix": "eslint ./src/*.ts --fix",
+    "dev": "ts-node ./src/index.ts",
+    "build": "rm -rf dist && ncc build src/index.ts -o dist -s",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@vercel/ncc": "^0.33.3",
+    "csdnsynchexo": "^3.1.2"
+   },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.20.2",
+    "@types/node": "^17.0.23",
+    "eslint": "^8.13.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "lint-staged": {
+    "*": "npm run lint:fix"
+  }
+}
