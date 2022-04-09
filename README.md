@@ -8,10 +8,14 @@ TODO
 
 #### Action params
 
-- output
+- output string
 
-The directory of the hexo source. Default `process.cwd()`
+The directory of the hexo source. Default `source/_posts`
 
-- issue_url
+- issue_url string
 
 The github issue url. Like `https://github.com/flytam/blog/issues`
+
+- replace boolean
+
+Whether to replace the contents of the original directory. Default `false`

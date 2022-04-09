@@ -10,6 +10,9 @@ inputs:
   output:
     description: The directory of the hexo source. Default `process.cwd()`
     required: false
+  replace:
+    description: Whether to replace the contents of the original directory. Default `false`
+    required: false
 runs:
   using: node16
   main: dist/index.js
