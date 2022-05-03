@@ -1,6 +1,6 @@
 {
   "name": "github-issue-to-hexo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A github action which can generate hexo article from github issue",
   "keywords": [
     "github",
