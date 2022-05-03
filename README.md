@@ -32,13 +32,13 @@ jobs:
         with:
           persist-credentials: 'false'
           repository: ${{ env.BLOG_SOURCE }}
-          ref: 'main'
+          ref: main
           token: ${{ secrets.token }}
       - name: issue生成 hexo文章
         uses: flytam/github-issue-to-hexo@main
         with:
           issue_url: ${{ env.ISSUE_URL }}
-          output: 'source/_posts'
+          output: source/_posts
           replace: true
       - name: commit hexo源文件
         run: |
