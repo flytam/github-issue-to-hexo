@@ -1,4 +1,5 @@
 import * as core from '@actions/core'
+import 'csdnsynchexo/dist/extension/github/index'
 import { run } from 'csdnsynchexo'
 import { removeSync } from 'fs-extra'
 
