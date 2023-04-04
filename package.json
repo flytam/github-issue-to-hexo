@@ -21,7 +21,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@vercel/ncc": "^0.33.3",
-    "csdnsynchexo": "^3.1.4",
+    "csdnsynchexo": "^3.2.2",
     "fs-extra": "^10.0.1"
   },
   "devDependencies": {
